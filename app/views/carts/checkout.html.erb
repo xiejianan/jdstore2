@@ -31,17 +31,18 @@
       </span>
     </div>
     <hr>
-    <h2>订单资讯</h2>
+    <h2> 订单资讯 </h2>
     <div class="order_form">
       <%= simple_form_for @order do |f| %>
-      <legeng>订购人</legeng>
+      <legend>订购人</legend>
       <div class="form_group col-lg-6">
         <%= f.input :billing_name %>
       </div>
       <div class="form_group col-lg-6">
         <%= f.input :billing_address %>
       </div>
-      <legeng>收货人</legeng>
+
+      <legend>收货人</legend>
       <div class="form_group col-lg-6">
         <%= f.input :shipping_name %>
       </div>
