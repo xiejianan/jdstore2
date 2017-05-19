@@ -1,5 +1,7 @@
 class OrdersController < ApplicationController
-  before_action :authenticate_user!,only:[:create]
+  layout "admin"
+  before_action :authenticate_user!
+  before_action :admin_required
 
 
   def create
